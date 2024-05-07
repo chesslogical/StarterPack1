@@ -1,0 +1,12 @@
+[package]
+name = "a"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[dependencies]
+aes-gcm = "0.9.3"
+tokio = { version = "1", features = ["full"] }
+walkdir = "2.3.2"
+rand = "0.8.4"
+

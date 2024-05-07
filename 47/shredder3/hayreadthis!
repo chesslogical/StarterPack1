@@ -1,0 +1,21 @@
+This is 19-shredder with improved memory handling.
+
+
+ Shread me once, shame on me. Shred me twice (or more) shame on you :)  
+
+Fun fact- the "RECYCLE BIN" is a way to collect all of your data and spy on you. Some companies could tell you what you deleted on this day 11 years ago. Let that sink in. 
+
+This script defines a constant named SHRED_DIR [./shred] that specifies the name of the directory where the files to be encrypted are located. NOTE- this is ONE WAY encryption. There is NO decryption. DO NOT put anything in the shred directory that you want to save. There are NO take backs! 
+
+Here is an updated version of the xor() function that uses safe memory allocation and safer ways of accessing array elements:
+
+fn xor(data: &mut [u8], key: &[u8]) {
+    let key_len = key.len();
+    for (i, byte) in data.iter_mut().enumerate() {
+        let key_byte = key[i % key_len];
+        *byte ^= key_byte;
+    }
+}
+
+
+This version uses an iterator to iterate over each byte in the data array, and uses the enumerate() method to get the index of each byte. It then uses a separate variable to store the key byte for each iteration, rather than repeatedly indexing the key array with the modulo operator. Finally, it uses the ^= operator to perform the XOR operation between each byte in the data array and the corresponding byte in the key array.

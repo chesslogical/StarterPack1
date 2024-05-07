@@ -1,0 +1,8 @@
+[package]
+name = "system_info"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+sys-info = "0.9.1"
+os_info = "3.0.1"
