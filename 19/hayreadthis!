@@ -1,0 +1,34 @@
+
+ 
+ 
+ This is 18-Shredder with improved error handling. 
+ 
+ Shread me once, shame on me. Shred me twice (or more) shame on you :)  
+
+Fun fact- the "RECYCLE BIN" is a way to collect all of your data and spy on you. Some companies could tell you what you deleted on this day 11 years ago. Let that sink in. 
+
+This script defines a constant named SHRED_DIR [./shred] that specifies the name of the directory where the files to be encrypted are located. NOTE- this is ONE WAY encryption. There is NO decryption. DO NOT put anything in the shred directory that you want to save. There are NO take backs! 
+
+
+
+
+
+This code is an implementation of a simple file encryption program that encrypts all files in a directory called "shred" using a randomly generated key. The encryption is performed by first bit-shifting each byte in the file, then performing an XOR operation between each byte and a corresponding byte in the key.
+
+Here is a brief overview of the main functions in the code:
+main(): This is the entry point for the program. It first generates a random key of the same length as the largest file in the "shred" directory. It then iterates through each file in the directory and performs the encryption using the bit_shift() and xor() functions. Finally, it prints some statistics about the encryption process, waits for user input, and exits.
+
+bit_shift(): This function performs a bit shift operation on each byte in a given array. Specifically, it shifts each byte to the right by 1 bit and rotates the most significant bit to the least significant bit position. This is a simple operation that helps to obfuscate the original data.
+
+xor(): This function performs an XOR operation between each byte in two given arrays. Specifically, it XORs each byte in the data array with a corresponding byte in the key array. If the key is shorter than the data, the key is repeated cyclically to match the length of the data. This is a common encryption operation that helps to scramble the data and make it more difficult to recover the original content.
+
+get_max_file_size(): This function returns the size of the largest file in the "shred" directory. It iterates through each file in the directory and compares its size to the current maximum. This is used to determine the length of the random key to generate.
+pause(): This function waits for user input before returning. It simply prompts the user to "Press any key to continue..." and waits for the user to enter any input.
+
+Overall, this code provides a simple example of how file encryption can be performed using Rust. However, it should be noted that this implementation is not particularly secure and should not be used in production environments. For example, the random key generation is not cryptographically secure, and the bit shift and XOR operations are not strong enough to prevent determined attackers from recovering the original data. For real-world encryption, it is important to use well-vetted encryption algorithms and key management practices.
+
+
+
+
+
+
