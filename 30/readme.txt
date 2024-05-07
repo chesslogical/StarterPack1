@@ -1,0 +1,3 @@
+USE CAUTION! In this version, the user is asked whether they want to encrypt or decrypt the specified directory. The program then processes each file in the directory accordingly.
+
+Please be aware that since the encryption key is randomly generated each time the program is run, you must run the decryption immediately after the encryption within the same program instance. In a real-world application, you would want to securely store the encryption key when encrypting the files, and then retrieve it when you need to decrypt them. Additionally, proper error handling, input validation, and security practices should be applied for a production use case.

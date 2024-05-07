@@ -1,0 +1,9 @@
+[package]
+name = "aes256-keygen"
+version = "0.1.0"
+edition = "2023"
+
+[dependencies]
+rand = "0.8.4"
+pbkdf2 = "0.3.0"
+crypto = "0.2.36"
