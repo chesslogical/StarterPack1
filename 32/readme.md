@@ -1,4 +1,4 @@
-NOTE!! As of this directory, 32 and forward, we will make more robust examples of fully working apps. 
+ 
 Rust Encryption/Decryption otp.
 
 
