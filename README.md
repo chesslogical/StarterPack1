@@ -109,7 +109,7 @@
 
 52- Multithreaded webserver in Rust
 
-53- 
+53- CLI timer app. I use it on windows. It simply asks for number of minutes to count down. Updates every 10 percent of countdown. Beeps 5 times when done and resets, asking for the number of minutes to count down. 
 
 54-
 
