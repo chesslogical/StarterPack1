@@ -41,5 +41,28 @@
 
 19- another file shredder
 
-20  Yet  another file shredder
+20-  Yet  another file shredder
+
+21- shreds entire directory. No way to decrypt
+
+22- In this version, the maximum value for the input field is set to 115792089237316195423570985008687907853269984665640564039457584007913129639935 using the max attribute, which is the maximum input value that the SHA-256 hash function can handle. Therefore, this script can generate a unique password for any input number between 1 and the maximum input value that can be handled by the SHA-256 hash function, while ensuring that the same password is returned every time the same number is given.
+
+23- The Random SHA-512 Key Generator is a Rust console application that generates random SHA-512 keys and saves them in individual files within a directory named "key".
+
+
+24- Shows some Linux system info
+
+25- This Rust program is a SHA3-512 hash calculator that takes user input, validates it, computes its SHA3-512 hash, and displays the result. 
+
+26- Showing cpu core temp in Linux. 
+
+27- Encrypt or decrrypt a file! No key needed, no password needed. The app does all the work for you. 
+
+
+28- Simulation of Conway's Game of Life in Rust.
+
+29- USE CAUTION. This creates a random key then encrypts an entire folder and all its subfolders-, but does not decrypt it. More of a directory shredder than an encryption tool. 
+
+30- Encryption- read full readme or you will NOT be able to decrypt
+
 
