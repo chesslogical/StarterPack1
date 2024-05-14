@@ -1,5 +1,5 @@
 use std::fs;
-use std::io::{self};
+use std::io::{self, Write};
 use walkdir::WalkDir;
 
 fn main() -> io::Result<()> {
@@ -7,6 +7,12 @@ fn main() -> io::Result<()> {
     println!("Enter the file extension (without the dot): ");
     io::stdin().read_line(&mut extension)?;
     let extension = extension.trim().to_lowercase();
+
+    // Call the user confirmation prompt
+    if !prompt_user_confirmation() {
+        println!("Operation canceled by user.");
+        return Ok(());
+    }
 
     let current_dir = std::env::current_dir()?;
     let mut count = 1;
@@ -16,6 +22,10 @@ fn main() -> io::Result<()> {
         let path = entry.path();
         if let Some(ext) = path.extension() {
             if ext.to_str().unwrap_or("").to_lowercase() == extension {
+                while current_dir.join(format!("{}.{}", count, extension)).exists() {
+                    count += 1;
+                }
+                
                 let new_filename = format!("{}.{}", count, extension);
                 let new_path = current_dir.join(new_filename);
 
@@ -47,3 +57,10 @@ fn main() -> io::Result<()> {
     Ok(())
 }
 
+fn prompt_user_confirmation() -> bool {
+    let mut response = String::new();
+    print!("Are you sure you want to proceed with renaming? (y/n): ");
+    io::stdout().flush().unwrap();
+    io::stdin().read_line(&mut response).unwrap();
+    response.trim().to_lowercase() == "y"
+}
