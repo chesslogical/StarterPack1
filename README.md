@@ -111,7 +111,7 @@
 
 53- CLI timer app. I use it on windows. It simply asks for number of minutes to count down. Updates every 10 percent of countdown. Beeps 5 times when done and resets, asking for the number of minutes to count down. 
 
-54-
+54- asks for file extention without the "." for example jpg. Renames every jpg in current directory, starts with 1.jpg and numbers all in sequence. for example 2.jpg 3.jpg works nice
 
 55-
 
