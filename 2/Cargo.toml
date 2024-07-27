@@ -10,3 +10,4 @@ edition = "2021"
 clap = "4.5.11"
 anyhow = "1.0.86"
 zeroize = "1.8.1"
+winapi = { version = "0.3", features = ["fileapi", "winnt"] }
