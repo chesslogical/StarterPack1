@@ -1,4 +1,9 @@
 
+
+![images](https://github.com/user-attachments/assets/5a5b3b17-ee0f-4b70-87cf-41321a5ef99c)
+
+
+
  This readme is a Work In Progress. Duplicates mean the higher number duplicate is intended for re-write or modification. Do NOT run any of this code unless you understand what it does. If possible you should get an old computer and use it exclusively to test/learn rust code and re-install the OS frequently. 
 
   Code for the discerning Rust coder. 
