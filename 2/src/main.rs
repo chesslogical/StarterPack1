@@ -1,4 +1,4 @@
-use clap::{Command, Arg};
+use clap::{Arg, Command};
 use std::fs::File;
 use std::io::{BufReader, Read, Write};
 use anyhow::{Context, Result};
@@ -10,30 +10,30 @@ fn main() -> Result<()> {
         .author("Your Name")
         .about("Encrypts or decrypts files using the One Time Pad method.")
         .arg(Arg::new("mode")
-             .short('m')
-             .long("mode")
-             .value_parser(clap::builder::ValueParser::string())
-             .required(true)
-             .help("Operation mode: 'E' for encryption, 'D' for decryption"))
+            .short('m')
+            .long("mode")
+            .value_parser(clap::value_parser!(String))
+            .required(true)
+            .help("Operation mode: 'E' for encryption, 'D' for decryption"))
         .arg(Arg::new("input")
-             .short('i')
-             .long("input")
-             .value_parser(clap::builder::ValueParser::string())
-             .required(true)
-             .help("Path to the input file"))
+            .short('i')
+            .long("input")
+            .value_parser(clap::value_parser!(String))
+            .required(true)
+            .help("Path to the input file"))
         .arg(Arg::new("key")
-             .short('k')
-             .long("key")
-             .value_parser(clap::builder::ValueParser::string())
-             .required(true)
-             .help("Path to the key file"))
+            .short('k')
+            .long("key")
+            .value_parser(clap::value_parser!(String))
+            .required(true)
+            .help("Path to the key file"))
         .get_matches();
 
     let mode = matches.get_one::<String>("mode").expect("Mode required");
     let filename = matches.get_one::<String>("input").expect("Input file required");
     let key_filename = matches.get_one::<String>("key").expect("Key file required");
 
-    process_file(mode, filename, key_filename, 1024)  // Assuming a chunk size of 1024 bytes
+    process_file(mode, filename, key_filename, 1024) // Assuming a chunk size of 1024 bytes
 }
 
 fn process_file(mode: &str, filename: &str, key_filename: &str, chunk_size: usize) -> Result<()> {
@@ -82,3 +82,4 @@ fn process_file(mode: &str, filename: &str, key_filename: &str, chunk_size: usiz
 
     Ok(())
 }
+
