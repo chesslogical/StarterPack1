@@ -124,4 +124,5 @@
 
 57- otp 
 
+58- very tiny SHA3 rust app. this app is god code. see the readme for it. 
 
