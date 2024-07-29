@@ -126,3 +126,4 @@
 
 58- very tiny SHA3 rust app. this app is god code. see the readme for it. 
 
+59- 7 different apps. std lib only, rust encryption 
