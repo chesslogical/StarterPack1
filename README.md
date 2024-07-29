@@ -3,8 +3,7 @@
 ![images](https://github.com/user-attachments/assets/5a5b3b17-ee0f-4b70-87cf-41321a5ef99c)
 
 
-
- This readme is a Work In Progress. Duplicates mean the higher number duplicate is intended for re-write or modification. Do NOT run any of this code unless you understand what it does. 
+This code should compile, make sure you know what it does tho before running it. It is literally made for information purposes only, to study rust lang. If you find an app you like, it will need further dev to be reliable. The apps here are not production grade by any means. If you want to use any of the code, run it through chatgpt to audit and improve it.  
 
   Code for the discerning Rust coder. 
 
