@@ -131,3 +131,5 @@
 60- ChaCha20-Poly1305 based encryption, this one is very good. On par with AES. 
 
 61- AES encryption script 
+
+62- misc Bash scripts 
