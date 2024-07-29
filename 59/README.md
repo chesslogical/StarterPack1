@@ -1,4 +1,5 @@
 
+![images](https://github.com/user-attachments/assets/7ec57e8c-fc74-4aae-bc8e-e89a736a4373)
 
 
 There are dozens of different ways to encrypt files via rust! Here are some of the ways. Note- all apps in RustEncrypt strictly use std lib only- adding
