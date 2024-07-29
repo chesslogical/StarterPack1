@@ -127,3 +127,5 @@
 58- very tiny SHA3 rust app. this app is god code. see the readme for it. 
 
 59- 7 different apps. std lib only, rust encryption 
+
+60- ChaCha20-Poly1305 based encryption, this one is very good. On par with AES. 
