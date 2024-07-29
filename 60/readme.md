@@ -1,3 +1,7 @@
+
+![images](https://github.com/user-attachments/assets/50cc6a2d-fe8f-4cba-9b74-a0a2b8ded78a)
+
+
 ## Cha
 Cha provides a robust encryption solution using the ChaCha20-Poly1305 algorithm, known for its strong security and performance. It allows users to encrypt and decrypt files securely using a password, ensuring the confidentiality and integrity of their data. The app employs standard cryptographic practices, including key derivation, nonce generation, and secure storage of necessary metadata.
 
