@@ -129,3 +129,5 @@
 59- 7 different apps. std lib only, rust encryption 
 
 60- ChaCha20-Poly1305 based encryption, this one is very good. On par with AES. 
+
+61- AES encryption script 
