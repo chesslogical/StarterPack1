@@ -4,7 +4,7 @@
 
 
 
- This readme is a Work In Progress. Duplicates mean the higher number duplicate is intended for re-write or modification. Do NOT run any of this code unless you understand what it does. If possible you should get an old computer and use it exclusively to test/learn rust code and re-install the OS frequently. 
+ This readme is a Work In Progress. Duplicates mean the higher number duplicate is intended for re-write or modification. Do NOT run any of this code unless you understand what it does. 
 
   Code for the discerning Rust coder. 
 
